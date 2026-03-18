@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M2P5"/>
+        <attribute name="authors" value="maria"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-17 10:35:04 PM"/>
+        <attribute name="created" value="bWFyaWE7REVTS1RPUC02SVBUODdFOzIwMjYtMDMtMTc7MDM6MTE6MDQgUE07Mjg1MA=="/>
+        <attribute name="edited" value="bWFyaWE7REVTS1RPUC02SVBUODdFOzIwMjYtMDMtMTc7MTA6MzU6MDQgUE07MTsyOTYy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="itemprice" type="Real" array="False" size=""/>
+            <declare name="discountindecimal" type="Real" array="False" size=""/>
+            <declare name="discountamt" type="Real" array="False" size=""/>
+            <declare name="finalprice" type="Real" array="False" size=""/>
+            <input variable="itemprice"/>
+            <input variable="discountindecimal"/>
+            <assign variable="discountamt" expression="itemprice*discountindecimal"/>
+            <assign variable="finalprice" expression="itemprice-discountamt"/>
+            <output expression="&quot;Discount amount: &quot;&amp;discountamt" newline="True"/>
+            <output expression="&quot;Final price: &quot;&amp;finalprice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
